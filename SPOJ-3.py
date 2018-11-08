@@ -1,4 +1,5 @@
-"""import math
+#SPOJ=>AE00 - Rectangles
+import math
 def countRect(n):
     ans = 0
     for length in range(1, int(math.sqrt(n)) + 1):
@@ -8,4 +9,4 @@ def countRect(n):
             height += 1
     return ans
 n = int(input())
-print(countRect(n))"""
+print(countRect(n))

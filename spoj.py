@@ -1,4 +1,6 @@
-"""def binarySearch(arr, low, high, x):
+#SPOJJ=>PAIRS1 - Count the Pairs
+
+def binarySearch(arr, low, high, x):
     if (high >= low):
         mid = low + (high - low) // 2
         if x == arr[mid]:
@@ -8,6 +10,7 @@
         else:
             return binarySearch(arr, low, (mid - 1), x)
     return -1
+
 def countPairsWithDiffK(arr, n, k):
     count = 0
     arr.sort()
@@ -21,58 +24,7 @@ def countPairsWithDiffK(arr, n, k):
 #k = 2
 n,k=map(int,input().split())
 arr=list(map(int,input().split()[:n]))
-print(countPairsWithDiffK(arr, n, k))"""
-
-
-
-"""t=int(input())
-for t in range(t):
-    n,m=map(int,input().split())
-    c=str(n)[::-1]
-    z=int(c)
-    #print(z)
-    d=str(m)[::-1]
-    y=int(d)
-    e=z+y
-    f=str(e)[::-1]
-    g=int(f)
-    print(g)"""
-
-
-
-
-"""import math
-def countRect(n):
-    ans = 0
-    for length in range(1, int(math.sqrt(n)) + 1):
-        height = length
-        while (height * length <= n):
-            ans += 1
-            height += 1
-    return ans
-n = int(input())
-print(countRect(n))"""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(countPairsWithDiffK(arr, n, k))
 
 
 
